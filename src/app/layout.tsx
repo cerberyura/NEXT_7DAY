@@ -11,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
                                        children,
+                                       model
                                    }: {
     children: React.ReactNode,
+    model: React.ReactNode,
 
 }) {
     return (
@@ -20,6 +22,7 @@ export default function RootLayout({
         <body className={inter.className}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
             {children}
+            {model}
         </div>
 
         </body>
